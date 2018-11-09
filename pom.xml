@@ -1,0 +1,73 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.jasongattagalla</groupId>
+  <artifactId>TwitterHire</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>TwitterHire</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <repositories>
+      <repository>
+         <id>twitter4j.org</id>
+         <name>twitter4j.org Repository</name>
+         <url>http://twitter4j.org/maven2</url>
+         <releases>
+            <enabled>true</enabled>
+         </releases>
+         <snapshots>
+            <enabled>true</enabled>
+         </snapshots>
+      </repository>
+   </repositories>
+   <dependencies>
+      <dependency>
+         <groupId>org.twitter4j</groupId>
+         <artifactId>twitter4j-core</artifactId>
+         <version>[4.0,)</version>
+      </dependency>
+ <!-- https://mvnrepository.com/artifact/org.twitter4j/twitter4j-stream --> 
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-streaming-twitter_2.11</artifactId>
+    <version>1.6.3</version>
+</dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-core_2.10 -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-core_2.10</artifactId>
+    <version>2.1.0</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming_2.11 -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-streaming_2.11</artifactId>
+    <version>2.1.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.twitter/util-core_2.10 -->
+<dependency>
+    <groupId>com.twitter</groupId>
+    <artifactId>util-core_2.10</artifactId>
+    <version>6.1.0</version>
+</dependency>
+   <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-tags_2.10 -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-tags_2.10</artifactId>
+    <version>2.1.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.spark/spark-streaming-twitter_2.10 -->
+<dependency>
+    <groupId>org.apache.spark</groupId>
+    <artifactId>spark-streaming-twitter_2.10</artifactId>
+    <version>1.6.3</version>
+</dependency>    
+ </dependencies>
+</project>
