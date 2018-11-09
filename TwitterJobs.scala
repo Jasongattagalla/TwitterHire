@@ -38,7 +38,7 @@ object TwitterPopularTags {
 
 
                      //for writing output to the external source s3
-val data=ssc.textfile("s3n://AKIAJVMNDMSQLVRXJ2MQ:ZIX8b+JE9nUBAt4Z7VbUh7UEirSX4UY/5DTnHVql
+val data=ssc.textfile("s3n://###)
 
 )
     // Printing tweets with the hashtags #jobs #hire
